@@ -8,13 +8,13 @@ public class CountDownClockSync extends Thread {
     }
 
     @Override
-    public void run(){
+    public synchronized void run(){
         for (; start >= 0 ; start--) {
             System.out.println("T minus "+ start);
             try {
                 Thread.sleep(1000);
             }catch (Exception e){
-                
+
             }
         }
     }
