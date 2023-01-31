@@ -8,7 +8,7 @@ public class MyNewCountDownDemo {
         Runnable flood,ignite,lift;
         ScheduledThreadPoolExecutor mypool;
 
-        mypool = new ScheduledThreadPoolExecutor(25);
+        mypool = new ScheduledThreadPoolExecutor(3);
 
         flood = new NewLaunchEvent("Flooding...!!!");
         ignite = new NewLaunchEvent("Ignite...!!!");
@@ -20,5 +20,7 @@ public class MyNewCountDownDemo {
         mypool.schedule(flood,4l,TimeUnit.SECONDS);
         mypool.schedule(ignite,14l,TimeUnit.SECONDS);
         mypool.schedule(lift,20l,TimeUnit.SECONDS);
+
+        mypool.shutdown();
     }
 }
