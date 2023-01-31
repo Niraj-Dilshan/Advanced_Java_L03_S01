@@ -1,7 +1,7 @@
 package com.ictec.threads;
 
 public class NewCountDown implements Runnable{
-    public static int startAt;
+    private int startAt;
 
     public NewCountDown(int startAt) {
         this.startAt = startAt;
