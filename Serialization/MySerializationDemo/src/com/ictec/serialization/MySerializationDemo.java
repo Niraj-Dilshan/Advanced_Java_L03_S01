@@ -6,6 +6,7 @@ import java.io.ObjectOutputStream;
 public class MySerializationDemo {
     public static void main(String[] args) {
         Student stu = new Student(1,"Niraj");
+        stu.setAge(24);
         String filePath = "stu.ser";
         // Write object to file
         try {
