@@ -19,8 +19,8 @@ public class Cat extends Animal{
     @Override
     public String toString() {
         return "Cat{" +
-                "Speed='" + getSpeed() + '\'' +
-                "color='" + color + '\'' +
+                "Speed ='" + getSpeed() + '\'' +
+                " Color ='" + color + '\'' +
                 '}';
     }
 }
