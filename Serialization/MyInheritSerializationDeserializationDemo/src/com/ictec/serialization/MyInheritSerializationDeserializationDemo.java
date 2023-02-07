@@ -9,8 +9,12 @@ public class MyInheritSerializationDeserializationDemo {
         Cat c = new Cat(10.0,"White");
 
         sr.SerializerCat(c);
-
         dr.DeserializerCat();
+
+        UniversityEmployee ue = new UniversityEmployee("Niraj",1);
+
+        sr.SerializerUniversityEmployee(ue);
+        dr.DeserializerUniversityEmployee();
 
     }
 }
