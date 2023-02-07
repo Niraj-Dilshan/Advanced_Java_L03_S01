@@ -1,10 +1,13 @@
 package com.ictec.serialization;
 
-public class Student {
-    private String name;
-    private int id;
+import java.io.Serializable;
 
-    public Student(String name, int id) {
+public class Student implements Serializable {
+
+    private int id;
+    private String name;
+
+    public Student(int id, String name) {
         this.name = name;
         this.id = id;
     }
