@@ -13,6 +13,7 @@ public class MySerializationDemo {
             FileOutputStream fos = new FileOutputStream(filePath);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(stu);
+            oos.flush();
             oos.close();
             fos.close();
             System.out.println("Object written to file successfully.");
