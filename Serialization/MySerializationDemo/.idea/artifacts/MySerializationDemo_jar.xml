@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="MySerializationDemo:jar">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="MySerializationDemo.jar">
+      <element id="module-output" name="MySerializationDemo" />
+    </root>
+  </artifact>
+</component>
