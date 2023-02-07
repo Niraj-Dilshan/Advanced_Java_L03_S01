@@ -14,9 +14,10 @@ public class MyDeserializationDemo {
             ois.close();
             fis.close();
             System.out.println("Object read from file successfully: ");
-            System.out.println("ID  : " + student.getId());
-            System.out.println("Name: "+ student.getName());
-            System.out.println("Age : "+ student.getAge());
+            System.out.println("ID       : " + student.getId());
+            System.out.println("Name     : " + student.getName());
+            System.out.println("Age      : " + student.getAge());
+            System.out.println("Password : " + student.getPassword());
         } catch (Exception e) {
             System.out.println("An error occurred while reading object from file.");
             e.printStackTrace();

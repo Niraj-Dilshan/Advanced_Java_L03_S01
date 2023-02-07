@@ -6,8 +6,8 @@ public class Student implements Serializable {
 
     private int id;
     private String name;
-
     private static double age;
+    private transient long password;
 
     public Student(int id, String name) {
         this.id = id;
@@ -35,6 +35,14 @@ public class Student implements Serializable {
     }
 
     public void setAge(double age) {
-        Student.age = age;
+        this.age = age;
+    }
+
+    public long getPassword() {
+        return password;
+    }
+
+    public void setPassword(long password) {
+        this.password = password;
     }
 }
