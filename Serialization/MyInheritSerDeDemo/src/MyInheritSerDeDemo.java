@@ -12,6 +12,7 @@ public class MyInheritSerDeDemo {
 //        deser.deserializeUniversityEmployee();
 
         Car car = new Car("Blue",222.0);
+        car.setYear(2020);
         ser.serializeCar(car);
         deser.deserializeCar();
 

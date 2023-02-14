@@ -4,7 +4,11 @@ import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
 public class Car extends Vehicle implements Externalizable {
+
+    private static final long serialVersionUID = 1919L;
     private double speed;
+
+    private transient int year;
 
     public Car(){};
 
@@ -27,6 +31,7 @@ public class Car extends Vehicle implements Externalizable {
         out.writeObject(getColor());
         //Child Class
         out.writeDouble(getSpeed());
+        out.writeInt(getYear());
     }
 
     @Override
@@ -35,13 +40,23 @@ public class Car extends Vehicle implements Externalizable {
         setColor((String) in.readObject());
         //Child Class
         setSpeed(in.readDouble());
+        setYear(in.readInt());
     }
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "Car{ " +
                 "Color = " + getColor() +","+
-                " speed = " + speed +
+                " speed = " + speed +","+
+                " year = " + getYear() +
                 '}';
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 }
