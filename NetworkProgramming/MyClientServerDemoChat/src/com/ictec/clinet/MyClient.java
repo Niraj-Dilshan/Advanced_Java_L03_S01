@@ -16,7 +16,7 @@ public class MyClient {
             DataInputStream dis = new DataInputStream(myClient.getInputStream());
             //sending data to server
             while (true){
-
+                System.out.println("\033[32m");
                 System.out.println("Enter the Massage/Reply");
                 String reply = input.nextLine();
                 dos.writeUTF(reply);
