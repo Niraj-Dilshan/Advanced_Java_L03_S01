@@ -4,19 +4,42 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class MyClient {
     public static void main(String[] args) {
         try {
-
+            Scanner input =  new Scanner(System.in);
             //creating client
             Socket myClient = new Socket("localhost",50505);
-            //sending data to server
             DataOutputStream dos = new DataOutputStream(myClient.getOutputStream());
-            dos.writeUTF("Hello Server!......");
-            dos.flush();
-            dos.close();
-            myClient.close();
+            DataInputStream dis = new DataInputStream(myClient.getInputStream());
+            //sending data to server
+            while (true){
+
+                System.out.println("Enter the Massage/Reply");
+                String reply = input.nextLine();
+                dos.writeUTF(reply);
+
+                if(reply.equalsIgnoreCase("bye")){
+                    dos.flush();
+                    dos.close();
+                    myClient.close();
+                    break;
+                }
+
+                //assigning massage to string
+                String msg = dis.readUTF();
+                //print massage
+                System.out.println("The massage from the Server : "+ msg);
+
+                if(msg.equalsIgnoreCase("bye")){
+                    dos.flush();
+                    dos.close();
+                    myClient.close();
+                    break;
+                }
+            }
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
