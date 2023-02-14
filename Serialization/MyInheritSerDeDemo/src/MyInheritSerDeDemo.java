@@ -7,10 +7,13 @@ public class MyInheritSerDeDemo {
 //        ser.serializeCat(c);
 //        deser.deserializeCat();
 
-        UniversityEmployee u = new UniversityEmployee("Kamal",30, 10);
-        ser.serializeUniversityEmployee(u);
-        deser.deserializeUniversityEmployee();
+//        UniversityEmployee u = new UniversityEmployee("Kamal",30, 10);
+//        ser.serializeUniversityEmployee(u);
+//        deser.deserializeUniversityEmployee();
 
+        Car car = new Car("Blue",222.0);
+        ser.serializeCar(car);
+        deser.deserializeCar();
 
     }
 }

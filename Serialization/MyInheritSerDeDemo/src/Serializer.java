@@ -32,4 +32,18 @@ public class Serializer {
             e.printStackTrace();
         }
     }
+
+    public void serializeCar(Car u) {
+        try {
+            fos = new FileOutputStream("car.ser");
+            oos = new ObjectOutputStream(fos);
+            oos.writeObject(u);
+            oos.flush();
+            fos.close();
+            oos.close();
+        } catch (Exception e) {
+            System.out.println("Exception occured : " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
 }

@@ -30,4 +30,17 @@ public class DeSerializer {
             e.printStackTrace();
         }
     }
+
+    public void deserializeCar(){
+        try {
+            fis = new FileInputStream("car.ser");
+            ois = new ObjectInputStream(fis);
+            Car u = (Car) ois.readObject();
+            System.out.println(u.toString());
+
+        }catch (Exception e){
+            System.out.println("Exception occured : " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
 }
