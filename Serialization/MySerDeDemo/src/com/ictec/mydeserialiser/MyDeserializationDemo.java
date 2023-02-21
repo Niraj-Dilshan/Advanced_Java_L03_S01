@@ -8,6 +8,7 @@ public class MyDeserializationDemo {
     public static void main(String[] args) {
 
         try{
+
             FileInputStream fis = new FileInputStream("stu.ser");
             ObjectInputStream ois = new ObjectInputStream(fis);
             Student stu = (Student)ois.readObject();
