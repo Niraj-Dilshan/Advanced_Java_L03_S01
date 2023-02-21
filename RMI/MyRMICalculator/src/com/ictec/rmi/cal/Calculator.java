@@ -11,5 +11,7 @@ public interface Calculator extends Remote {
     //Minus to integers
     public int minusTwoIntegers(int x, int y) throws RemoteException;
 
+    public int multiplyTwoIntegers(int x, int y) throws RemoteException;
 
+    public double divideTwoIntegers(double x, double y) throws RemoteException;
 }

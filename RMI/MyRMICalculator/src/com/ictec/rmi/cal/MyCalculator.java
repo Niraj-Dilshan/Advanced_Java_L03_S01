@@ -19,4 +19,14 @@ public class MyCalculator extends UnicastRemoteObject implements Calculator{
         return x-y;
     }
 
+    @Override
+    public int multiplyTwoIntegers(int x, int y) throws RemoteException {
+        return x * y;
+    }
+
+    @Override
+    public double divideTwoIntegers(double x, double y) throws RemoteException {
+        return x/y;
+    }
+
 }
