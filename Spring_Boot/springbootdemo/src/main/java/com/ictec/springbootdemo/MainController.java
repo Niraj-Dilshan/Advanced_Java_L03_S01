@@ -8,18 +8,17 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class MainController {
 	@Autowired
-	private ProjectEntityRepository projectEntityRepository;
+	private ProjectService projectService;
 
 	@GetMapping("/")
 	public String getAllProjects(Model model) {
-		model.addAttribute("projects", projectEntityRepository.findAll());
+		model.addAttribute("projects", projectService.getAllProjects());
 		return "project-list";
 	}
 
 	@GetMapping("/projects/{id}")
 	public String getProjectById(@PathVariable Long id, Model model) {
-		ProjectEntity project = projectEntityRepository.findById(Math.toIntExact(id))
-				.orElseThrow(() -> new IllegalArgumentException("Invalid project id: " + id));
+		ProjectEntity project = projectService.getProjectById(id);
 		model.addAttribute("project", project);
 		return "project-details";
 	}
@@ -32,31 +31,26 @@ public class MainController {
 
 	@PostMapping("/projects/add")
 	public String addNewProject(@ModelAttribute ProjectEntity project) {
-		projectEntityRepository.save(project);
+		projectService.addProject(project);
 		return "redirect:/";
 	}
 
 	@GetMapping("/projects/{id}/edit")
 	public String showEditProjectForm(@PathVariable Long id, Model model) {
-		ProjectEntity project = projectEntityRepository.findById(Math.toIntExact(id))
-				.orElseThrow(() -> new IllegalArgumentException("Invalid project id: " + id));
+		ProjectEntity project = projectService.getProjectById(id);
 		model.addAttribute("project", project);
 		return "edit-project";
 	}
 
 	@PostMapping("/projects/{id}/edit")
 	public String updateProject(@PathVariable Long id, @ModelAttribute ProjectEntity updatedProject) {
-		ProjectEntity project = projectEntityRepository.findById(Math.toIntExact(id))
-				.orElseThrow(() -> new IllegalArgumentException("Invalid project id: " + id));
-		project.setTitle(updatedProject.getTitle());
-		project.setCordinator(updatedProject.getCordinator());
-		projectEntityRepository.save(project);
+		projectService.updateProject(id, updatedProject);
 		return "redirect:/";
 	}
 
 	@GetMapping("/projects/{id}/delete")
 	public String deleteProject(@PathVariable Long id) {
-		projectEntityRepository.deleteById(Math.toIntExact(id));
+		projectService.deleteProject(id);
 		return "redirect:/";
 	}
 }
