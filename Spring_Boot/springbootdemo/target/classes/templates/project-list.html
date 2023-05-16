@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Project List</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    .action-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .action-links a {
+      display: inline-block;
+      padding: 5px 10px;
+      margin-right: 5px;
+      border-radius: 3px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .view-link {
+      background-color: #007bff;
+    }
+
+    .edit-link {
+      background-color: #ffc107;
+    }
+
+    .delete-link {
+      background-color: #dc3545;
+    }
+
+    .add-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      background-color: #28a745;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Project List</h1>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Coordinator</th>
+      <th>Action</th>
+    </tr>
+    <tr th:each="project : ${projects}">
+      <td th:text="${project.id}"></td>
+      <td th:text="${project.title}"></td>
+      <td th:text="${project.cordinator}"></td>
+      <td>
+        <div class="action-links">
+          <a class="view-link" th:href="@{/projects/{id}(id=${project.id})}">View</a>
+          <a class="edit-link" th:href="@{/projects/{id}/edit(id=${project.id})}">Edit</a>
+          <a class="delete-link" th:href="@{/projects/{id}/delete(id=${project.id})}">Delete</a>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <a class="add-link" th:href="@{/projects/new}">Add New Project</a>
+</div>
+</body>
+</html>

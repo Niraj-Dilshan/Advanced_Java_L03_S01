@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Add New Project</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #7500ff;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #b260ff;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Add New Project</h1>
+  <form th:action="@{/projects/add}" th:object="${project}" method="post">
+    <label for="title">Title:</label>
+    <input type="text" id="title" th:field="*{title}" required />
+
+    <label for="coordinator">Coordinator:</label>
+    <input type="text" id="coordinator" th:field="*{cordinator}" required />
+
+    <div class="button-container">
+      <input type="submit" value="Add" />
+      <a class="back-link button" th:href="@{/}">Back to List</a>
+    </div>
+  </form>
+</div>
+</body>
+</html>

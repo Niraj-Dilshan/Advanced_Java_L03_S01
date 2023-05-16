@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Project Details</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7500ff;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #b260ff;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Project Details</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Coordinator</th>
+        </tr>
+        <tr>
+            <td th:text="${project.id}"></td>
+            <td th:text="${project.title}"></td>
+            <td th:text="${project.cordinator}"></td>
+        </tr>
+    </table>
+    <a class="back-link button" th:href="@{/}">Back to List</a>
+</div>
+</body>
+</html>
