@@ -1,4 +1,4 @@
-package com.ictec.springbootworkshop;
+package com.ictech.springbootworkshop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
