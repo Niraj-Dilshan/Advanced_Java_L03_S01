@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="JavaAdvanced">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MyThreadExample.zip!/" />
+      <root url="jar://$PROJECT_DIR$/SingletonDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Practical_03.zip!/" />
+      <root url="jar://$PROJECT_DIR$/ThreadJoinDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/CountDownTimerDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MyAdaptorDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MyFacadeDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MyFlexibleObserverDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MyTemplateDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MySerializationDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MyEasyObserverDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/FileHandlingRecap.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MyNewCountDown.zip!/" />
+      <root url="jar://$PROJECT_DIR$/FactoryDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MyDeserializationDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/BankingDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MyCountDownTimer.zip!/" />
+      <root url="jar://$PROJECT_DIR$/WriteDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MyLockTimerDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MyDecoratorDemo.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

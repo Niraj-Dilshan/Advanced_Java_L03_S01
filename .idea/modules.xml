@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Threads/BankingDemo/BankingDemo.iml" filepath="$PROJECT_DIR$/Threads/BankingDemo/BankingDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Threads/CountDownTimerDemo/CountDownTimerDemo.iml" filepath="$PROJECT_DIR$/Threads/CountDownTimerDemo/CountDownTimerDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPatterns/FactoryDemo/FactoryDemo.iml" filepath="$PROJECT_DIR$/DesignPatterns/FactoryDemo/FactoryDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FileHandlingRecap/FileHandlingRecap.iml" filepath="$PROJECT_DIR$/FileHandlingRecap/FileHandlingRecap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaAdvanced.iml" filepath="$PROJECT_DIR$/.idea/JavaAdvanced.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPatterns/MyAdaptorDemo/MyAdaptorDemo.iml" filepath="$PROJECT_DIR$/DesignPatterns/MyAdaptorDemo/MyAdaptorDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Threads/MyCountDownTimer/MyCountDownTimer.iml" filepath="$PROJECT_DIR$/Threads/MyCountDownTimer/MyCountDownTimer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPatterns/MyDecoratorDemo/MyDecoratorDemo.iml" filepath="$PROJECT_DIR$/DesignPatterns/MyDecoratorDemo/MyDecoratorDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Serialization/MyDeserializationDemo/MyDeserializationDemo.iml" filepath="$PROJECT_DIR$/Serialization/MyDeserializationDemo/MyDeserializationDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPatterns/MyEasyObserverDemo/MyEasyObserverDemo.iml" filepath="$PROJECT_DIR$/DesignPatterns/MyEasyObserverDemo/MyEasyObserverDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPatterns/MyFacadeDemo/MyFacadeDemo.iml" filepath="$PROJECT_DIR$/DesignPatterns/MyFacadeDemo/MyFacadeDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPatterns/MyFlexibleObserverDemo/MyFlexibleObserverDemo.iml" filepath="$PROJECT_DIR$/DesignPatterns/MyFlexibleObserverDemo/MyFlexibleObserverDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Serialization/MyInheritSerializationDeserializationDemo/MyInheritSerializationDeserializationDemo.iml" filepath="$PROJECT_DIR$/Serialization/MyInheritSerializationDeserializationDemo/MyInheritSerializationDeserializationDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Threads/MyLockTimerDemo/MyLockTimerDemo.iml" filepath="$PROJECT_DIR$/Threads/MyLockTimerDemo/MyLockTimerDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Threads/MyNewCountDown/MyNewCountDown.iml" filepath="$PROJECT_DIR$/Threads/MyNewCountDown/MyNewCountDown.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Serialization/MySerializationDemo/MySerializationDemo.iml" filepath="$PROJECT_DIR$/Serialization/MySerializationDemo/MySerializationDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Threads/MySyncTimerDemo/MySyncTimerDemo.iml" filepath="$PROJECT_DIR$/Threads/MySyncTimerDemo/MySyncTimerDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPatterns/MyTemplateDemo/MyTemplateDemo.iml" filepath="$PROJECT_DIR$/DesignPatterns/MyTemplateDemo/MyTemplateDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Threads/MyThreadExample/MyThreadExample.iml" filepath="$PROJECT_DIR$/Threads/MyThreadExample/MyThreadExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practical_03/Practical_03.iml" filepath="$PROJECT_DIR$/Practical_03/Practical_03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPatterns/SingletonDemo/SingletonDemo.iml" filepath="$PROJECT_DIR$/DesignPatterns/SingletonDemo/SingletonDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Threads/ThreadJoinDemo/ThreadJoinDemo.iml" filepath="$PROJECT_DIR$/Threads/ThreadJoinDemo/ThreadJoinDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Threads/WriteDemo/WriteDemo.iml" filepath="$PROJECT_DIR$/Threads/WriteDemo/WriteDemo.iml" />
+    </modules>
+  </component>
+</project>
