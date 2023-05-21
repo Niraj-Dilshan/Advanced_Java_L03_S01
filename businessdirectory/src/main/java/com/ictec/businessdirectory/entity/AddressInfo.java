@@ -1,8 +1,14 @@
 package com.ictec.businessdirectory.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "Address")
 public class AddressInfo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     @JsonProperty("Line1")
     private String line1;
 
@@ -34,6 +40,14 @@ public class AddressInfo {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     @Override

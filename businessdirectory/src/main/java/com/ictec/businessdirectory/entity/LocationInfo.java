@@ -1,8 +1,14 @@
 package com.ictec.businessdirectory.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "Location")
 public class LocationInfo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     @JsonProperty("Lan")
     private String lan;
 
@@ -23,6 +29,14 @@ public class LocationInfo {
 
     public void setLat(String lat) {
         this.lat = lat;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     @Override
